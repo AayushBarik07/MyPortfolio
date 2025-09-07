@@ -124,7 +124,7 @@ const ContactSection = () => {
           </div>
           
           {/* Contact Form */}
-{/*           <div>
+          <div>
             <div className="bg-gradient-to-b from-gray-900/30 to-black/30 border border-white/5 p-10">
               {isSubmitted ? (
                 <div className="text-center py-12">
@@ -216,7 +216,7 @@ const ContactSection = () => {
                 </form>
               )}
             </div>
-          </div> */}
+          </div>
         </div>
       </div>
     </section>
