@@ -2,7 +2,7 @@ import React from 'react';
 import Header from './components/Header';
 import HomeSection from './components/HomeSection';
 import ProjectsSection from './components/ProjectSection';
-// import ContactSection from './components/ContactSection';
+import ContactSection from './components/ContactSection';
 import Footer from './components/Footer';
 
 
@@ -13,7 +13,7 @@ function App() {
       <main className="flex-grow">
         <HomeSection />
         <ProjectsSection />
-{/*         <ContactSection /> */}
+        <ContactSection />
       </main>
       <Footer />
     </div>
