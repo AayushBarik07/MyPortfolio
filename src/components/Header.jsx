@@ -33,8 +33,10 @@ const Header = () => {
   const navLinks = [
     { href: "#home", label: "Home" },
     { href: "#projects", label: "Projects" },
-    { href: "#contact", label: "Contact" },
+    { href: "#skills", label: "Skills" },
     { href: "#experience" , label: "Experience" },
+    { href: "#certifications" , label: "Certifications" },
+    { href: "#contact", label: "Contact" },
     { href: "#resume", label: "Resume", onClick: () => handleDownload() }
   ];
 

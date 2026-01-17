@@ -5,6 +5,8 @@ import ProjectsSection from './components/ProjectSection';
 import Experience from './components/Experience';
 import ContactSection from './components/ContactSection';
 import Footer from './components/Footer';
+import Skills from './components/Skills';
+import Certification from './components/Certifications';
 
 
 function App() {
@@ -14,7 +16,9 @@ function App() {
       <main className="flex-grow">
         <HomeSection />
         <ProjectsSection />
+        <Skills />
         <Experience />
+        <Certification />
         <ContactSection />
       </main>
       <Footer />
