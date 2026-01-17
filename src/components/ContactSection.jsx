@@ -37,7 +37,7 @@ const ContactSection = () => {
   };
 
   return (
-    <section className="py-24 bg-black relative overflow-hidden" id="contact">
+    <section className="py-15 bg-black relative overflow-hidden" id="contact">
       {/* Background elements */}
       <div className="absolute inset-0">
         <div className="absolute top-1/3 left-1/4 w-96 h-96 bg-amber-500/5 rounded-full blur-3xl"></div>
@@ -47,9 +47,6 @@ const ContactSection = () => {
       <div className="container mx-auto px-6 lg:px-12 max-w-7xl relative z-10">
         {/* Section Header */}
         <div className="mb-20 text-center">
-          <p className="text-amber-500 font-light tracking-[0.3em] uppercase text-sm mb-4">
-            Contact
-          </p>
           <h2 className="text-4xl md:text-6xl font-thin text-white mb-6">
             Let's <span className="font-light bg-gradient-to-r from-amber-500 to-orange-600 bg-clip-text text-transparent">Connect</span>
           </h2>

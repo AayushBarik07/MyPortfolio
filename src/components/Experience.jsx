@@ -110,7 +110,7 @@ const Experience = () => {
             </div>
           </div>
         ))}
-        <p className="text-gray-400 text-sm md:text-sm mb-12 leading-relaxed font-light text-center">
+        <p className="text-gray-400 text-sm md:text-sm leading-relaxed font-light text-center">
           There more experiences to explore! Feel free to reach out for a detailed discussion on my professional journey and projects.
           <br />
           Stay tuned for more updates as I continue to grow and take on new challenges!

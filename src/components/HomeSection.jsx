@@ -1,6 +1,21 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 
 const HomeSection = () => {
+  const text = "I'm Aayush Barik";
+  const [displayText, setDisplayText] = useState("");
+  const [index, setIndex] = useState(0);
+
+  useEffect(() => {
+    if (index < text.length) {
+      const timeout = setTimeout(() => {
+        setDisplayText((prev) => prev + text[index]);
+        setIndex(index + 1);
+      }, 100); // typing speed (ms)
+
+      return () => clearTimeout(timeout);
+    }
+  }, [index, text]);
+
   return (
     <section className="relative min-h-screen bg-black flex items-center justify-center overflow-hidden" id="home">
 
@@ -26,13 +41,28 @@ const HomeSection = () => {
           </div>
         </div>
         
-        <div className="mb-8 overflow-hidden">
+        <div className="mb-8cle overflow-hidden">
           <p className="text-amber-500 font-light tracking-[0.3em] uppercase text-sm mb-4 animate-fade-in">
             Welcome
           </p>
+
           <h1 className="text-5xl md:text-7xl font-thin text-white mb-4 tracking-tight">
-            I'm <span className="font-light bg-gradient-to-r from-amber-500 to-orange-600 bg-clip-text text-transparent">Aayush Barik</span>
+            {displayText.startsWith("I'm ") ? (
+              <>
+                I&apos;m{" "}
+                <span className="font-light bg-gradient-to-r from-amber-500 to-orange-600 bg-clip-text text-transparent">
+                  {displayText.replace("I'm ", "")}
+                </span>
+              </>
+            ) : (
+              displayText
+            )}
+            <span className="animate-pulse">|</span>
           </h1>
+
+          {/* <h1 className="text-5xl md:text-7xl font-thin text-white mb-4 tracking-tight">
+            I'm <span className="font-light bg-gradient-to-r from-amber-500 to-orange-600 bg-clip-text text-transparent">Aayush Barik</span>
+          </h1> */}
           <div className="h-px w-24 bg-gradient-to-r from-transparent via-amber-500 to-transparent mx-auto mb-5"></div>
         </div>
         
