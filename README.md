@@ -1,12 +1,96 @@
-# React + Vite
+# Aayush Barik — Personal Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive personal portfolio website built with React and Vite, featuring a dark aesthetic with amber/orange accents.
 
-Currently, two official plugins are available:
+🌐 **Live:** [github.com/AayushBarik07/MyPortfolio](https://github.com/AayushBarik07/MyPortfolio)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## Sections
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+| Section            | Description                                       |
+| ------------------ | ------------------------------------------------- |
+| **Home**           | Animated typewriter introduction                  |
+| **Skills**         | Programming, frontend, and CS fundamentals        |
+| **Experience**     | Work history and leadership roles                 |
+| **Projects**       | Pinned GitHub repositories via GitHub GraphQL API |
+| **Certifications** | AWS, McKinsey, and hackathon credentials          |
+| **Contact**        | EmailJS-powered contact form with social links    |
+
+---
+
+## Tech Stack
+
+- **Framework:** React 19 + Vite 7
+- **Styling:** Tailwind CSS 4
+- **Animations:** Framer Motion
+- **Email:** EmailJS (`@emailjs/browser`)
+- **GitHub Data:** GitHub GraphQL API via Apollo Client
+- **Backend (API route):** Express + Node.js (for GitHub pinned repos)
+
+---
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js 18+
+- npm
+
+### Install dependencies
+
+```bash
+npm install
+```
+
+### Environment variables
+
+Create a `.env` file in the project root:
+
+```env
+GITHUB_ACCESS_TOKEN=your_github_personal_access_token
+```
+
+The token is used by the `/api/pinned` route to fetch your pinned GitHub repositories.
+
+### Run locally
+
+```bash
+npm run dev
+```
+
+App runs at `http://localhost:5173`.
+
+### Build for production
+
+```bash
+npm run build
+```
+
+---
+
+## Project Structure
+
+```
+src/
+├── components/
+│   ├── Header.jsx          # Navbar with resume download
+│   ├── HomeSection.jsx     # Hero with typewriter effect
+│   ├── Skills.jsx          # Skills grid
+│   ├── Experience.jsx      # Work & leadership timeline
+│   ├── ProjectSection.jsx  # GitHub pinned repos
+│   ├── Certifications.jsx  # Certificates display
+│   ├── ContactSection.jsx  # EmailJS contact form
+│   └── Footer.jsx
+api/
+└── pinned.js               # GitHub GraphQL API handler
+```
+
+---
+
+## Contact
+
+- **Email:** superbsup45@gmail.com
+- **LinkedIn:** [aayush-barik-49882b247](https://www.linkedin.com/in/aayush-barik-49882b247/)
+- **GitHub:** [AayushBarik07](https://github.com/AayushBarik07)
+- **X (Twitter):** [@aayush_barik](https://x.com/aayush_barik)
