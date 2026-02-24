@@ -2,7 +2,7 @@
 
 A modern, responsive personal portfolio website built with React and Vite, featuring a dark aesthetic with amber/orange accents.
 
-🌐 **Live:** [github.com/AayushBarik07/MyPortfolio](https://github.com/AayushBarik07/MyPortfolio)
+🌐 **Live:** [(https://github.com/AayushBarik07/MyPortfolio)](https://my-portfolio-zeta-cyan-59.vercel.app/)
 
 ---
 
