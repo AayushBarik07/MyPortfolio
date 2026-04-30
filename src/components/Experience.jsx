@@ -2,6 +2,19 @@ import React from "react";
 
 const experiences = [
   {
+    role: "Software Developer Intern",
+    company: "YugaYatra Retail (OPC) Pvt. Ltd.",
+    duration: "Jan. 2026 – Mar. 2026",
+    location: "Chennai, Tamil Nadu",
+    points: [
+      "Developed Admin Dashboard modules for FreshIn10 using React in collaboration with a 5+ member team.",
+      "Built CRM features and handled database operations using SQL and Supabase.",
+      "Improved workflow performance by 30% through optimized data handling and system design.",
+      "Collaborated with team members using Git for version control and project management."
+    ],
+    tech: ["React.js", "JavaScript", "HTML", "CSS", "SQL", "PostgreSQL", "Supabase", "Git"],
+  },
+  {
     role: "SDE Intern",
     company: "Bluestock",
     duration: "1 Feb 2025 - 31 Mar 2025",
@@ -26,6 +39,7 @@ const experiences = [
     ],
     tech: ["Leadership", "Event Management", "Team Collaboration"],
   },
+  
 ];
 
 const Experience = () => {
